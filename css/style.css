@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0!important;
+    font-size: 18px;
+}
+
+:root {
+
+    /*  colors  */
+    --primary-color: #5C00A4;
+    --secundary-color: #eb12b4;
+    --primary-dark: #323232;
+    --primary-light: rgb(250, 250, 250);
+    --primary-light-80: rgba(250, 250, 250, 0.8);
+    --primary-light-40: rgba(250, 250, 250, 0.4);
+}
+
+body {
+    background-image: linear-gradient(to bottom, #5c00a4, #8500aa, #a900af, #cb00b2, #eb12b4);
+    width: 100%;
+    height: 100vh;
+    color: var(--primary-dark);
+}
+
+.container {
+    max-width: 1184px;
+}
+
+.spacing-64 {
+    margin-top: 64px;
+}
+
+.bg-col-80 {
+    background-color: var(--primary-light-80);
+ /*    padding: 40px 24px; */
+    border-radius: 24px 0 0 24px;
+    background-clip: content-box;
+}
+
+.bg-col-100 {
+    background-color: var(--primary-light);
+    /* padding: 40px 24px; */
+    border-radius: 0 24px 24px 0;
+    background-clip: content-box;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+/*     border: 1px solid green; */
+    margin: 24px 0 48px;
+}
+
+/* .box {
+    align-items: center;
+    align-content: center;
+} */
+
+#profile-photo {
+    border-radius: 100%;
+}
+
+.info {
+    margin-left: 24px;
+}
+
+#apellido {
+    color: var(--primary-color);
+    font-size: 24px;
+}
+
+#nombre {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#profession {
+    margin: 0;
+}
+
+.contact {
+    padding: 24px;
+    background-color: var(--primary-light-40);
+    border-radius: 8px;
+    margin: 24px 0;
+    align-items: center;
+    align-content: center;
+    font-size: 18px;
+}
+
+.icon {
+    margin-right: 16px;
+    color: var(--primary-color);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.subtilte {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.text {
+    font-size: 16px;
+}
+
+.education {
+    margin-top: 16px;
+}
+
+.derecha {
+    margin-top: 7.5rem;
+}
+
+.experience {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: inline;
+    padding: 12px 16px;
+    margin-left: 8px;
+    background-color: var(--primary-light-80);
+    border-radius: 8px;
+}
+
+.img-derecha {
+    border-radius: 0 24px 0 0;
+    background-image: url(../img/4-grafico-ux.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -6rem;
+    background-size: 100%;
+}
+
+.right-bottom {
+    padding: 0 24px;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+}
+
+.period {
+    font-size: 14px!important;
+    display: contents;
+}
+
+.line {
+    background-color: var(--primary-color)!important;
+    height: 2px!important;
+    width: 75%!important;
+    opacity: 1!important;
+    margin-left: 24px;
+
+}
