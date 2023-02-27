@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/fav.svg" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Curriculum Vitae</title>
     <script src="https://kit.fontawesome.com/f16c575dc0.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body>
 
     <section class="container overflow-hidden spacing-64">
+        <div class="to-top">
+            <i class="fa-solid fa-chevron-up fa-sm"></i>
+        </div>
         <div class="row gx-3">
             <!-- Inicio de datos personales -->
             <div class="col-12 col-md-4 bg-col-80">
@@ -31,22 +40,24 @@
                         <button id="generator-button">Cambiar usuario</button>
                     </div>
 
-                    <article class="contact">
-                        <h2 class="title m-vis" id="contact-button">
-                            <label class="icon"><i class="fa-solid fa-arrow-down fa-sm" id="arrow-contact"></i></label>
+                    <article class="contact-container">
+                        <h2 class="title-click title m-vis">
+                            <span class="icon"><i class="fa-solid fa-arrow-down fa-sm"></i></span>
                             Datos de contacto
                         </h2>
-                        <h2 class="title d-vis">Datos de contacto</h2>
+                        <!-- <h2 class="title d-vis">Datos de contacto</h2> -->
                         <div class="d-vis" id="user-contact">
                             <div class="contact">
-                                <p class="bullets">
-                                    <i class="fa-brands fa-linkedin-in fa-xl icon"></i>linkedin.com/<span id="linkedin-user"></span>
-                                </p>
+                                <a href="#" class="bullets">
+                                    <i class="fa-brands fa-linkedin-in fa-xl icon"></i>linkedin.com/<span
+                                        id="linkedin-user"></span>
+                                </a>
                             </div>
                             <div class="contact">
-                                <p class="bullets">
-                                    <i class="fa-brands fa-behance fa-xl icon"></i>behance.net/<span id="behance-user"></span>
-                                </p>
+                                <a href="#" class="bullets">
+                                    <i class="fa-brands fa-behance fa-xl icon"></i>behance.net/<span
+                                        id="behance-user"></span>
+                                </a>
                             </div>
                             <div class="contact">
                                 <p class="bullets">
@@ -61,13 +72,13 @@
                         </div>
                     </article>
 
-                    <article class="contact">
-                        <h2 class="title m-vis" id="education-button">
-                            <span class="icon"><i class="fa-solid fa-arrow-down fa-sm" id="arrow-education"></i></span>
+                    <article class="contact-container">
+                        <h2 class="title-click title m-vis">
+                            <span class="icon"><i class="fa-solid fa-arrow-down fa-sm"></i></span>
                             Educación
                         </h2>
-                        <h2 class="title d-vis">Educación</h2>
-                        <div class="d-vis" id="education-info">
+                        <!-- <h2 class="title d-vis">Educación</h2> -->
+                        <div class="d-vis">
                             <div class="education contact">
                                 <h3 class="subtilte">Diseñador Gráfico</h3>
                                 <p class="text">FADU - UBA - 2011 - 2016</p>
@@ -85,7 +96,7 @@
                 </div>
             </div>
             <!-- Fin de datos personales -->
-            
+
             <!-- Inicio de experiencia -->
             <div class="col-12 col-md-8 bg-col-100">
                 <div class="p-4 hero-right">
@@ -104,7 +115,9 @@
                             </div>
                             <h2 class="title">Diseñador UX/UI</h2>
                             <h3 class="subtilte">Empresa 03</h3>
-                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ipsam cumque cupiditate, dignissimos repudiandae qui. Officiis nihil, iure rerum placeat, soluta accusamus illo, excepturi fuga esse voluptatem dolor pariatur quam?</p>
+                            <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ipsam
+                                cumque cupiditate, dignissimos repudiandae qui. Officiis nihil, iure rerum placeat,
+                                soluta accusamus illo, excepturi fuga esse voluptatem dolor pariatur quam?</p>
                         </div>
                         <div class="education mb-5">
                             <div class="box-container">
@@ -113,7 +126,11 @@
                             </div>
                             <h2 class="title">Diseñador Digital - UI</h2>
                             <h3 class="subtilte">Empresa 02</h3>
-                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nobis fuga repudiandae ducimus! Voluptas earum est blanditiis unde corporis commodi deleniti perferendis excepturi nam nesciunt cupiditate numquam, quod recusandae laudantium.</p>
+                            <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta nobis
+                                fuga
+                                repudiandae ducimus! Voluptas earum est blanditiis unde corporis commodi deleniti
+                                perferendis excepturi nam nesciunt cupiditate numquam, quod recusandae laudantium.
+                            </p>
                         </div>
                         <div class="education mb-5">
                             <div class="box-container">
@@ -122,7 +139,12 @@
                             </div>
                             <h2 class="title">Diseñador Digital</h2>
                             <h3 class="subtilte">Empresa 01</h3>
-                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore enim similique perspiciatis nobis architecto doloremque, provident magnam quae blanditiis aspernatur minus molestiae. Numquam aspernatur fugiat minima facilis, ipsum sapiente.</p>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolore
+                                enim
+                                similique perspiciatis nobis architecto doloremque, provident magnam quae blanditiis
+                                aspernatur minus molestiae. Numquam aspernatur fugiat minima facilis, ipsum
+                                sapiente.
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -130,7 +152,8 @@
             <!-- Fin de experiencia -->
         </div>
     </section>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>
